@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="HTML5, CSS3, Web Design, Bat, Shell, Security"
+    />
+    <meta name="description" content="웹서비스를 구현." />
+    <meta name="author" content="JooYeon Won , 원주연" />
+    <title>웹프로그래밍 | 강의소개</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-gray-200">
+    <header class="bg-black text-white py-4">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center">
+          <h1 class="text-3xl font-bold text-white">
+            <span class="text-red-600">웹</span>과 보안
+          </h1>
+          <nav>
+            <ul class="flex space-x-4">
+              <li class="text-white font-semibold">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="text-red-600 font-semibold">
+                <a href="about.html">Introduce</a>
+              </li>
+              <li>
+                <a href="idea.html" class="text-gray-300 hover:text-white"
+                  >Idea</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-gray-800 py-6">
+      <div class="container mx-auto px-4">
+        <h1 class="text-xl text-white mb-4">이메일 정보 입력</h1>
+        <form class="flex">
+          <input
+            type="email"
+            placeholder="Enter your email..."
+            class="p-2 w-80 rounded-l-md"
+          />
+          <button
+            type="submit"
+            class="bg-red-600 text-white px-4 py-2 rounded-r-md"
+          >
+            완료
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section id="main" class="my-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-4 gap-8">
+          <div class="col-span-3">
+            <h1 class="text-3xl mb-6"></h1>
+            <p class="mb-6">
+              이 홈페이지는 중부대학교에서 정보보호학을 전공하고 있는 18학번
+              원주연이 제작한 홈페이지 입니다. <br />
+              저에 대한 간략한 정보들과, 제가 수업에서 공부한 내용들 혹은
+              개인적으로 공부한 내용들이 포함되어 있으며, 이에 대한 관련 링크를
+              걸어 놓았습니다. <br />
+              제가 공부한 내용이 궁금하시다면, 우측의 Notion Link를
+              참고해주세요.
+            </p>
+            <div class="bg-white p-6 rounded shadow">
+              <p class="text-gray-700 mb-6">
+                MBTI : INFJ <br />
+                <br />
+                소유 자격증 : 네트워크 관리사 2급 / 침해사고대응 2급 <br />
+                <br />
+                취미 : 게임 / 프로그래밍 / 분석 <br />
+                <br />
+                좌우명 : 뭘 할지 모르면, 일단하고 인내심을 가지고 기다리기
+                <br />
+                <br />
+                현재 목표 : 캡스톤 프로젝트 마무리 짓기 / 정보처리기사 자격증
+                취득
+              </p>
+            </div>
+          </div>
+
+          <aside class="col-span-1">
+            <div class="bg-gray-800 p-4 rounded-md text-white">
+              <h3 class="text-xl mb-4">Notion Link</h3>
+              <p class="space-y-2">
+                <button class="bg-red-600 w-full py-2 rounded-md mb-2">
+                  <a
+                    href="https://maze-comet-07d.notion.site/f81e646e22564bfe8aef57c1986a9fa9"
+                    class="block text-center"
+                    >캡스톤 프로젝트</a
+                  >
+                </button>
+                <button class="bg-red-600 w-full py-2 rounded-md mb-2">
+                  <a
+                    href="https://maze-comet-07d.notion.site/aa765a0dbd1b4e04ba268521697601a2"
+                    class="block text-center"
+                    >웹 취약점 / 웹 해킹</a
+                  >
+                </button>
+                <button class="bg-red-600 w-full py-2 rounded-md">
+                  <a
+                    href="https://maze-comet-07d.notion.site/910d445e99b841f38635e29a6bd92fed"
+                    class="block text-center"
+                    >서버 취약점 분석</a
+                  >
+                </button>
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-black text-white py-4">
+      <div class="container mx-auto px-4 text-center">
+        <p>Copyright &copy; 2023, 중부대학교 정보보호학전공 원주연 학생</p>
+      </div>
+    </footer>
+  </body>
+</html>
