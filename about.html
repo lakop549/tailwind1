@@ -4,130 +4,301 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="keywords"
-      content="HTML5, CSS3, Web Design, Bat, Shell, Security"
-    />
-    <meta name="description" content="웹서비스를 구현." />
-    <meta name="author" content="JooYeon Won , 원주연" />
-    <title>웹프로그래밍 | 강의소개</title>
+    <title>웹프로그래밍 | 홈</title>
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
       rel="stylesheet"
     />
   </head>
-
-  <body class="bg-gray-200">
-    <header class="bg-black text-white py-4">
-      <div class="container mx-auto px-4">
-        <div class="flex justify-between items-center">
-          <h1 class="text-3xl font-bold text-white">
-            <span class="text-red-600">웹</span>과 보안
+  <body class="bg-gray-100">
+    <header class="bg-white shadow-lg">
+      <div
+        class="container mx-auto h-24 px-4 py-2 flex flex-col justify-center"
+      >
+        <nav class="flex justify-between items-center">
+          <h1 class="text-4xl font-bold text-gray-800">
+            <a href="index.html">Home</a>
           </h1>
-          <nav>
-            <ul class="flex space-x-4">
-              <li class="text-white font-semibold">
-                <a href="index.html">Home</a>
-              </li>
-              <li class="text-red-600 font-semibold">
-                <a href="about.html">Introduce</a>
-              </li>
-              <li>
-                <a href="idea.html" class="text-gray-300 hover:text-white"
-                  >Idea</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
+          <ul class="flex space-x-4">
+            <li class="font-semibold">
+              <a href="about.html" class="text-gray-600 hover:text-gray-800"
+                >Interest</a
+              >
+            </li>
+            <li class="font-semibold">
+              <a href="team.html" class="text-gray-600 hover:text-gray-800"
+                >Study</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
-
-    <section class="bg-gray-800 py-6">
+    <hr class="my-1 border-gray-300" />
+    <section class="bg-white text-black py-12">
       <div class="container mx-auto px-4">
-        <h1 class="text-xl text-white mb-4">이메일 정보 입력</h1>
-        <form class="flex">
-          <input
-            type="email"
-            placeholder="Enter your email..."
-            class="p-2 w-80 rounded-l-md"
-          />
-          <button
-            type="submit"
-            class="bg-red-600 text-white px-4 py-2 rounded-r-md"
-          >
-            완료
-          </button>
-        </form>
-      </div>
-    </section>
-
-    <section id="main" class="my-12">
-      <div class="container mx-auto px-4">
-        <div class="grid grid-cols-4 gap-8">
-          <div class="col-span-3">
-            <h1 class="text-3xl mb-6"></h1>
-            <p class="mb-6">
-              이 홈페이지는 중부대학교에서 정보보호학을 전공하고 있는 18학번
-              원주연이 제작한 홈페이지 입니다. <br />
-              저에 대한 간략한 정보들과, 제가 수업에서 공부한 내용들 혹은
-              개인적으로 공부한 내용들이 포함되어 있으며, 이에 대한 관련 링크를
-              걸어 놓았습니다. <br />
-              제가 공부한 내용이 궁금하시다면, 우측의 Notion Link를
-              참고해주세요.
+        <h3 class="text-lg font-bold mb-2 mr-4 text-2xl text-center">
+          Web Design
+        </h3>
+        <br />
+        <hr class="my-1 border-black" />
+        <hr class="my-1 border-black" />
+        <br />
+        <div class="grid grid-cols-3 gap-4 gap-x-16">
+          <!-- 첫 번째 열 -->
+          <div class="text-left">
+            <a href="https://dribbble.com/resources/web-design-trends-2023">
+              <div
+                class="w-full h-48 bg-cover bg-center mb-4"
+                style="
+                  background-image: url('https://images.prismic.io/dribbble/b4f15cf9-8f97-4bfe-8200-c29705c9c0d5_4b22bd81b5441b7dc243f3124a19baef.webp');
+                "
+              ></div>
+              <h3 class="text-xl font-semibold mb-2">
+                Top Web Design Trends of 2023
+              </h3>
+            </a>
+            <p class="text-gray-600">
+              Now that 2022 is over, it's out with the old and in with the new —
+              especially when it comes to web design and product design. Whether
+              you're hiring a web designer or looking for web design jobs, it's
+              important to familiarize yourself with the latest design trends.
+              You may even want to take some time to incorporate new web design
+              trends into your portfolio or think about how you can bring them
+              up during your next web design interview. Without further ado,
+              here are the top eight web design trends of 2023.
             </p>
-            <div class="bg-white p-6 rounded shadow">
-              <p class="text-gray-700 mb-6">
-                MBTI : INFJ <br />
-                <br />
-                소유 자격증 : 네트워크 관리사 2급 / 침해사고대응 2급 <br />
-                <br />
-                취미 : 게임 / 프로그래밍 / 분석 <br />
-                <br />
-                좌우명 : 뭘 할지 모르면, 일단하고 인내심을 가지고 기다리기
-                <br />
-                <br />
-                현재 목표 : 캡스톤 프로젝트 마무리 짓기 / 정보처리기사 자격증
-                취득
-              </p>
-            </div>
           </div>
 
-          <aside class="col-span-1">
-            <div class="bg-gray-800 p-4 rounded-md text-white">
-              <h3 class="text-xl mb-4">Notion Link</h3>
-              <p class="space-y-2">
-                <button class="bg-red-600 w-full py-2 rounded-md mb-2">
-                  <a
-                    href="https://maze-comet-07d.notion.site/f81e646e22564bfe8aef57c1986a9fa9"
-                    class="block text-center"
-                    >캡스톤 프로젝트</a
-                  >
-                </button>
-                <button class="bg-red-600 w-full py-2 rounded-md mb-2">
-                  <a
-                    href="https://maze-comet-07d.notion.site/aa765a0dbd1b4e04ba268521697601a2"
-                    class="block text-center"
-                    >웹 취약점 / 웹 해킹</a
-                  >
-                </button>
-                <button class="bg-red-600 w-full py-2 rounded-md">
-                  <a
-                    href="https://maze-comet-07d.notion.site/910d445e99b841f38635e29a6bd92fed"
-                    class="block text-center"
-                    >서버 취약점 분석</a
-                  >
-                </button>
-              </p>
-            </div>
-          </aside>
+          <!-- 두 번째 열 -->
+          <div class="text-left">
+            <a href="https://www.wix.com/blog/2021/05/web-design/">
+              <div
+                class="w-full h-48 bg-cover bg-center mb-4"
+                style="
+                  background-image: url('https://static.wixstatic.com/media/72c0b2_026a78c2a8c841fc95195a13e87081fa~mv2.jpg/v1/fill/w_723,h_414,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/72c0b2_026a78c2a8c841fc95195a13e87081fa~mv2.jpg');
+                "
+              ></div>
+              <h3 class="text-xl font-semibold mb-2">What Is Web Design?</h3>
+            </a>
+            <p class="text-gray-600">
+              Web design has come a long way since the first site was published
+              in 1991. With over one billion live websites on the internet
+              today, it’s no surprise that this industry is here to stay. Wix is
+              home to thousands of website design professionals, enthusiasts,
+              and designers who are empowering the industry to reach new
+              heights. So, if you’re here to learn more about the world of web
+              design, you’ve come to the right place.
+            </p>
+          </div>
+
+          <!-- 세 번째 열 -->
+          <div class="text-left">
+            <a href="https://www.awwwards.com/websites/portfolio/">
+              <div
+                class="w-full h-48 bg-cover bg-center mb-4"
+                style="
+                  background-image: url('https://assets.awwwards.com/awards/media/cache/thumb_440_330/submissions/2023/04/642c18e3853bf551837691.png');
+                "
+              ></div>
+              <h3 class="text-xl font-semibold mb-2">
+                Awwwards of Portfolio Websites
+              </h3>
+            </a>
+            <p class="text-gray-600">
+              A portfolio website can cover a lot of bases. Generally speaking,
+              professionals, agencies, freelancers and artists require a
+              creative medium to display their work. This is why website
+              portfolios, or other sites in which content is the number one
+              focus, are some of the most popular and valuable projects for
+              people looking for inspiration for their own work. Best selection
+              of Portfolio Website examples for your inspiration
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <footer class="bg-black text-white py-4">
-      <div class="container mx-auto px-4 text-center">
-        <p>Copyright &copy; 2023, 중부대학교 정보보호학전공 원주연 학생</p>
+    <hr class="my-1 border-black" />
+
+    <section class="bg-white text-black py-12">
+      <div class="container mx-auto px-4">
+        <h3 class="text-lg font-bold mb-2 mr-4 text-2xl text-center">
+          Security
+        </h3>
+        <br />
+        <br />
+        <hr class="my-1 border-black" />
+        <hr class="my-1 border-black" />
+        <br />
+        <br />
+        <div class="grid grid-cols-3 gap-4 gap-x-16">
+          <!-- 첫 번째 열 -->
+          <div class="text-left">
+            <a href="https://www.openpath.com/blog-post/security-technology">
+              <div
+                class="w-full h-48 bg-cover bg-center mb-4"
+                style="
+                  background-image: url('//images.ctfassets.net/7aadcbvnq1uv/5oiTVz1aixrSLiM6RuMEqH/c407035095634e912d9843474b2dbdb2/sec-trends-header-2.jpg?h=400&w=2200');
+                "
+              ></div>
+              <h3 class="text-xl font-semibold mb-2">
+                Security technology guide and 2022 trends
+              </h3>
+            </a>
+            <p class="text-gray-600">
+              No security strategy is complete without the right technology.
+              With over 560,000 new types of malware being discovered every day
+              that put cyber and physical security at risk, choosing the right
+              providers and staying on top of the latest security technology
+              trends can be overwhelming (AV-Test Institute). In this guide,
+              you’ll learn about the different types and components of security
+              technology available today, and how security trends are shaping
+              the way businesses leverage that technology. Plus, see which
+              physical security trends and cybersecurity trends 2022 will bring.
+            </p>
+          </div>
+
+          <!-- 두 번째 열 -->
+          <div class="text-left">
+            <a href="https://www.avast.com/c-b-what-is-server-security">
+              <div
+                class="w-full h-48 bg-cover bg-center mb-4"
+                style="
+                  background-image: url('https://academy.avast.com/hubfs/New_Avast_Academy/What%20is%20server%20security/What_is_Server_Security-Hero.jpg');
+                "
+              ></div>
+              <h3 class="text-xl font-semibold mb-2">
+                What Is Server Security
+              </h3>
+            </a>
+            <p class="text-gray-600">
+              With adversaries devising increasingly sophisticated ways to
+              attack, strong server security is critical in protecting your
+              business. Fortunately, it doesn’t have to be complicated. In this
+              article, we’ll define what server security is, explain why it’s so
+              important, and show you exactly how to set up a fully secured
+              server.
+            </p>
+          </div>
+
+          <!-- 세 번째 열 -->
+          <div class="text-left">
+            <a href="https://www.mimecast.com/content/web-security/">
+              <div
+                class="w-full h-48 bg-cover bg-center mb-4"
+                style="
+                  background-image: url('https://assets.mimecast.com/api/public/content/ac65188c4e9f444a9b56bb11a524e754?v=7ddfcc0d');
+                "
+              ></div>
+              <h3 class="text-xl font-semibold mb-2">What Is Web Security?</h3>
+            </a>
+            <p class="text-gray-600">
+              Web security must be a critical priority for every organization.
+              Along with email, the web is one of the top vectors for
+              cyberattacks. The web and the use of DNS services specifically are
+              part of 91% of all malware attacks, and email and web together are
+              a key part for 99% of successful breaches. While the importance of
+              web security is undisputed, protecting against web security
+              threats grows more challenging each day. From thwarting attacks to
+              dealing with limits in skills and resources, IT security
+              departments face serious challenges when trying to secure the web.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-1 border-black" />
+
+    <section class="bg-white text-black py-12">
+      <div class="container mx-auto px-4">
+        <h3 class="text-lg font-bold mb-2 mr-4 text-2xl text-center">
+          AI technology
+        </h3>
+        <br />
+        <br />
+        <hr class="my-1 border-black" />
+        <hr class="my-1 border-black" />
+        <br />
+        <br />
+        <div class="grid grid-cols-3 gap-4 gap-x-16">
+          <!-- 첫 번째 열 -->
+          <div class="text-left">
+            <a
+              href="https://www.wix.com/blog/2016/06/wix-artificial-design-intelligence/"
+            >
+              <div
+                class="w-full h-48 bg-cover bg-center mb-4"
+                style="
+                  background-image: url('https://static.wixstatic.com/media/84b06e_5b607acec7b64a2eb98f89f879b9f2f9~mv2.png/v1/fill/w_723,h_414,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/84b06e_5b607acec7b64a2eb98f89f879b9f2f9~mv2.png');
+                "
+              ></div>
+              <h3 class="text-xl font-semibold mb-2">
+                WIX Editer - AI Web Design
+              </h3>
+            </a>
+            <p class="text-gray-600">
+              AI-enabled user-friendly tools have become even more accessible to
+              those without any design background at all. For example, Wix
+              provides a versatile platform for professional website creation
+              for anyone at any skill level. You can create a website from
+              scratch, work with templates or utilize Wix Artificial Design
+              Intelligence (ADI).
+            </p>
+          </div>
+
+          <!-- 두 번째 열 -->
+          <div class="text-left">
+            <a href="https://openart.ai/">
+              <div
+                class="w-full h-48 bg-cover bg-center mb-4"
+                style="
+                  background-image: url('https://i0.wp.com/blog.openart.ai/wp-content/uploads/2023/01/42B6F5C9-8E0D-4B1A-9CD4-2FA9C96C00A4.jpg?resize=400%2C400&ssl=1');
+                "
+              ></div>
+              <h3 class="text-xl font-semibold mb-2">Openart - AI Image</h3>
+            </a>
+            <p class="text-gray-600">
+              Create with 30+ different Al image generators that can bring your
+              idea to life in seconds, no matter whether you want photorealistic
+              images, or artistic pictures, or anime, pick fine-tuned models to
+              easily generate amazing images and expand your imagination.
+            </p>
+          </div>
+
+          <!-- 세 번째 열 -->
+          <div class="text-left">
+            <a href="https://openai.com/">
+              <div
+                class="w-full h-48 bg-cover bg-center mb-4"
+                style="
+                  background-image: url('https://cdn-afkgp.nitrocdn.com/GgcvDclOgOFrMPDAxuwUmHHZlgKuQsxq/assets/images/optimized/rev-8d3b8a0/wp-content/uploads/2023/01/What-is-Chat-GPT-540x.jpg');
+                "
+              ></div>
+              <h3 class="text-xl font-semibold mb-2">OpenAI - ChatGpt</h3>
+            </a>
+            <p class="text-gray-600">
+              ChatGPT is an AI Chatbot developed by Open AI. The chatbot has a
+              language-based model that the developer fine-tunes for human
+              interaction in a conversational manner. Effectively it’s a
+              simulated chatbot primarily designed for customer service; people
+              use it for various other purposes too though. These range from
+              writing essays to drafting business plans, to generating code. But
+              what is it and what can it really do? If you are new to Chat GPT
+              this guide is for you, so continue reading.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-black shadow">
+      <div class="container mx-auto px-4 py-6">
+        <p class="text-center text-white">
+          Copyright &copy; 2023, 중부대학교 정보보호학전공 원주연 학생
+        </p>
       </div>
     </footer>
   </body>

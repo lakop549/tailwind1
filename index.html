@@ -5,62 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>웹프로그래밍 | 홈</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
       rel="stylesheet"
     />
   </head>
   <body class="bg-gray-100">
-    <header class="bg-white shadow">
-      <div class="container mx-auto px-4 py-2">
-        <div class="flex justify-between items-center">
-          <h1 class="text-3xl font-bold text-gray-800">
-            <span class="text-red-600">웹</span>과 보안
+    <header class="bg-white shadow-lg">
+      <div
+        class="container mx-auto h-24 px-4 py-2 flex flex-col justify-center"
+      >
+        <nav class="flex justify-between items-center">
+          <h1 class="text-4xl font-bold text-gray-800">
+            <a href="index.html">Home</a>
           </h1>
-          <nav>
-            <ul class="flex space-x-4">
-              <li class="text-gray-800 font-semibold">
-                <a href="index.html">Home</a>
-              </li>
-              <li>
-                <a href="about.html" class="text-gray-600 hover:text-gray-800"
-                  >Introduce</a
-                >
-              </li>
-              <li>
-                <a href="idea.html" class="text-gray-600 hover:text-gray-800"
-                  >Idea</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
+          <ul class="flex space-x-4">
+            <li class="font-semibold">
+              <a href="about.html" class="text-gray-600 hover:text-gray-800"
+                >Interest</a
+              >
+            </li>
+            <li class="font-semibold">
+              <a href="team.html" class="text-gray-600 hover:text-gray-800"
+                >Study</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
-    <section class="bg-blue-500 text-white py-12">
-      <div class="container mx-auto px-4">
-        <h1 class="text-5xl font-bold mb-4">주연의 블로그</h1>
-        <h2 class="text-3xl mb-4">Web Design & Web Programing & Security</h2>
-        <p class="text-xl">HTML5, CSS3, Web Design, Bat, Shell, Security</p>
-      </div>
-    </section>
-    <section class="bg-white py-8">
-      <div class="container mx-auto px-4">
-        <h1 class="text-3xl font-bold mb-4">이메일 정보 입력</h1>
-        <form class="flex">
-          <input
-            type="email"
-            placeholder="Enter ur email..!"
-            class="flex-grow p-2 border border-gray-300 rounded-l"
-          />
-          <button
-            type="submit"
-            class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-r"
-          >
-            완료
-          </button>
-        </form>
+    <hr class="my-1 border-gray-300" />
+    <section
+      class="bg-white text-black py-12"
+      style="
+        background-image: url('./img/laptop.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      "
+    >
+      <div class="container mx-auto px-4 grid grid-cols-2 gap-4">
+        <div class="text-left">
+          <h1 class="text-5xl font-bold mb-4">Joo's Portfolio</h1>
+          <h2 class="text-3xl mb-4">Web Design & Programing & Security</h2>
+          <p class="text-lg mt-8">
+            This is a portfolio site of JooYeon University in the class of 18
+            majoring in in <br />
+            information protection at JoongBu University. This site contains the
+            contents of <br />
+            JooYeon's study or project, and the topics are as above.
+          </p>
+        </div>
+        <div class="flex items-center justify-center"></div>
       </div>
     </section>
 

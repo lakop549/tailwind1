@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>웹프로그래밍 | 홈</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .comment-item {
+        background-color: #f8f8f8;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 0.5rem;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-white shadow-lg">
+      <div
+        class="container mx-auto h-24 px-4 py-2 flex flex-col justify-center"
+      >
+        <nav class="flex justify-between items-center">
+          <h1 class="text-4xl font-bold text-gray-800">
+            <a href="index.html">Home</a>
+          </h1>
+          <ul class="flex space-x-4">
+            <li class="font-semibold">
+              <a href="about.html" class="text-gray-600 hover:text-gray-800"
+                >Interest</a
+              >
+            </li>
+            <li class="font-semibold">
+              <a href="team.html" class="text-gray-600 hover:text-gray-800"
+                >Study</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <hr class="my-1 border-gray-300" />
+    <section class="bg-white text-black py-12">
+      <div class="container mx-auto px-4">
+        <h3 class="text-lg font-bold mb-2 mr-4 text-3xl text-center">
+          Notion Link
+        </h3>
+        <h3
+          class="text-lg font-bold mb-2 mr-4 text-center"
+          style="color: rgb(123, 120, 120)"
+        >
+          관련 항목에 대해서 공부한 노션 링크입니다.
+        </h3>
+        <br />
+        <hr class="my-1 border-black" />
+        <hr class="my-1 border-black" />
+        <br />
+        <div class="grid grid-cols-3 gap-4 gap-x-16">
+          <!-- 첫 번째 열 -->
+          <div class="text-left">
+            <a
+              href="https://www.notion.so/aa765a0dbd1b4e04ba268521697601a2?pvs=4"
+            >
+              <div
+                class="w-full h-48 bg-cover bg-center mb-4"
+                style="background-image: url('./img/webhacking.jpg')"
+              ></div>
+              <h3 class="text-xl font-semibold mb-2 text-center">웹 해킹</h3>
+            </a>
+          </div>
+
+          <!-- 두 번째 열 -->
+          <div class="text-left">
+            <a
+              href="https://www.notion.so/910d445e99b841f38635e29a6bd92fed?pvs=4"
+            >
+              <div
+                class="w-full h-48 bg-cover bg-center mb-4"
+                style="
+                  background-image: url('./img/Vulnerability\ Analysis.jpg');
+                "
+              ></div>
+              <h3 class="text-xl font-semibold mb-2 text-center">
+                취약점 분석
+              </h3>
+            </a>
+          </div>
+
+          <!-- 세 번째 열 -->
+          <div class="text-left">
+            <a
+              href="https://www.notion.so/f81e646e22564bfe8aef57c1986a9fa9?pvs=4"
+            >
+              <div
+                class="w-full h-48 bg-cover bg-center mb-4"
+                style="background-image: url('./img/Guide.png')"
+              ></div>
+              <h3 class="text-xl font-semibold mb-2 text-center">
+                캡스톤 프로젝트
+              </h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      <br />
+      <hr class="my-1 border-black" />
+      <hr class="my-1 border-black" />
+      <br />
+      <br />
+      <h1 class="text-2xl font-semibold mb-2 text-center">
+        질문이 있으면 댓글을 달아주세요.
+      </h1>
+      <div class="max-w-3xl mx-auto px-4 mt-8">
+        <h3 class="text-2xl font-bold mb-4">댓글</h3>
+        <form id="comment-form">
+          <label for="name" class="block mb-2 text-sm">이름:</label>
+          <input
+            type="text"
+            id="name"
+            class="w-full mb-4 p-2 border border-gray-400 rounded"
+            required
+          />
+
+          <label for="comment" class="block mb-2 text-sm">댓글:</label>
+          <textarea
+            id="comment"
+            rows="4"
+            class="w-full mb-4 p-2 border border-gray-400 rounded"
+            required
+          ></textarea>
+          <div class="text-right">
+            <button type="submit" class="bg-black text-white py-2 px-4 rounded">
+              댓글 작성
+            </button>
+          </div>
+        </form>
+      </div>
+      <br />
+      <div class="max-w-3xl mx-auto px-4 mt-8">
+        <h3 class="text-2xl font-bold mb-4">댓글 목록</h3>
+        <ul id="comment-list" class="list-none"></ul>
+      </div>
+    </section>
+
+    <footer class="bg-black shadow">
+      <div class="container mx-auto px-4 py-6">
+        <p class="text-center text-white">
+          Copyright &copy; 2023, 중부대학교 정보보호학전공 원주연 학생
+        </p>
+      </div>
+    </footer>
+    <script>
+      document
+        .getElementById('comment-form')
+        .addEventListener('submit', function (event) {
+          event.preventDefault()
+
+          const name = document.getElementById('name').value
+          const comment = document.getElementById('comment').value
+
+          if (!name || !comment) {
+            alert('모든 필드를 입력해 주세요.')
+            return
+          }
+
+          const commentItem = document.createElement('li')
+          commentItem.className = 'comment-item'
+          commentItem.innerHTML = `
+          <strong>${name}</strong><br>
+          ${comment}
+        `
+
+          document.getElementById('comment-list').appendChild(commentItem)
+
+          document.getElementById('name').value = ''
+          document.getElementById('comment').value = ''
+        })
+    </script>
+  </body>
+</html>
