@@ -10,16 +10,75 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <style>
+      .custom-hr {
+        height: 5px;
+        background-image: linear-gradient(to right, #161616, #0c0c0c);
+        background-color: #f3e7e7;
+        width: 50%;
+      }
+      .custom-hr1 {
+        height: 5px;
+        background-image: linear-gradient(to right, #ec6464, #f4e1e1);
+        background-color: #f3e7e7;
+        width: 98%;
+      }
+      .custom-hr2 {
+        height: 5px;
+        background-image: linear-gradient(to right, #7388f3, #e1d8f5);
+        background-color: #f3e7e7;
+        width: 98%;
+        margin-left: 4px;
+      }
+      .custom-hr3 {
+        height: 5px;
+        background-image: linear-gradient(to right, #65b6e2, #b6d4e7);
+        background-color: #f3e7e7;
+        width: 98%;
+        margin-left: 10px;
+      }
+      .custom-hr4 {
+        height: 5px;
+        background-image: linear-gradient(to right, #161616, #c5bebe);
+        background-color: #f3e7e7;
+        width: 98%;
+      }
+      .custom-hr5 {
+        height: 5px;
+        background-image: linear-gradient(to right, #161616, #c5bebe);
+        background-color: #f3e7e7;
+        width: 98%;
+        margin-left: 4px;
+      }
+      .custom-hr6 {
+        height: 5px;
+        background-image: linear-gradient(to right, #161616, #c5bebe);
+        background-color: #f3e7e7;
+        width: 98%;
+        margin-left: 10px;
+      }
+      .custom-hr7 {
+        height: 5px;
+        background-image: linear-gradient(to right, #245bd9, #dfdf7a);
+        background-color: #f3e7e7;
+        width: 98%;
+      }
+      .custom-hr-margin {
+        margin-bottom: 0px;
+      }
+    </style>
   </head>
   <body class="bg-gray-100">
-    <header class="bg-white shadow-lg">
+    <header class="bg-gray-100">
       <div
         class="container mx-auto h-24 px-4 py-2 flex flex-col justify-center"
       >
         <nav class="flex justify-between items-center">
-          <h1 class="text-4xl font-bold text-gray-800">
-            <a href="index.html">Home</a>
-          </h1>
+          <div class="logo-wrapper">
+            <h1 class="text-4xl font-bold text-gray-800">
+              <a href="index.html">Home</a>
+            </h1>
+          </div>
           <ul class="flex space-x-4">
             <li class="font-semibold">
               <a href="about.html" class="text-gray-600 hover:text-gray-800"
@@ -50,11 +109,10 @@
           <h1 class="text-5xl font-bold mb-4">Joo's Portfolio</h1>
           <h2 class="text-3xl mb-4">Web Design & Programing & Security</h2>
           <p class="text-lg mt-8">
-            This is a portfolio site of JooYeon University in the class of 18
-            majoring in in <br />
-            information protection at JoongBu University. This site contains the
-            contents of <br />
-            JooYeon's study or project, and the topics are as above.
+            안녕하세요. 중부대학교 정보보호학전공 원주연입니다. <br />
+            게임과 독서, 산책 처럼 혼자 활동하는 것을 좋아하는 학생입니다.
+            <br />
+            취미는 신규 IT 기술들을 정리하는 것을 좋아합니다.<br />
           </p>
         </div>
         <div class="flex items-center justify-center"></div>
@@ -63,6 +121,28 @@
 
     <section class="py-12">
       <div class="container mx-auto px-4">
+        <h3 class="text-4xl font-bold mb-4 text-center">Skill</h3>
+        <h3 class="text-2xl font-bold mb-4 text-center text-gray-600">
+          현재 저가 사용하는 기술입니다.
+        </h3>
+
+        <div class="custom-hr mx-auto"></div>
+        <hr class="my-2 border-b" />
+        <br />
+        <h3 class="text-2xl font-bold mb-5 text-center">웹 디자인</h3>
+        <div
+          class="hr-container"
+          style="
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+          "
+        >
+          <div class="custom-hr1 custom-hr-margin"></div>
+          <div class="custom-hr2 custom-hr-margin"></div>
+          <div class="custom-hr3 custom-hr-margin"></div>
+        </div>
+
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div class="bg-white p-6 rounded shadow">
             <img
@@ -80,6 +160,7 @@
               scripting languages such as JavaScript.
             </p>
           </div>
+
           <div class="bg-white p-6 rounded shadow">
             <img
               src="/img/logo_css.png"
@@ -96,21 +177,38 @@
           </div>
           <div class="bg-white p-6 rounded shadow">
             <img
-              src="/img/logo_brush.png"
+              src="/img/taiiwind.png"
               alt=""
               class="w-16 h-16 mx-auto mb-4"
             />
-            <h3 class="text-center text-2xl font-semibold mb-4">
-              Brush Markup
-            </h3>
+            <h3 class="text-center text-2xl font-semibold mb-4">Tailwind</h3>
             <p class="text-gray-600">
-              Web design encompasses many different skills and disciplines in
-              the production and maintenance of websites. The different areas of
-              web design include web graphic design; user interface design;
-              authoring, including standardized code and proprietary software;
-              user experience design; and search engine optimization.
+              Tailwind is a popular CSS framework that uses utility classes to
+              streamline the process of building custom user interfaces. It
+              offers a comprehensive set of pre-designed atomic classes for
+              common design patterns, enabling developers to create responsive
+              and mobile-first interfaces with minimal custom CSS. The framework
+              emphasizes functionality and scalability, making it a powerful
+              toolset for creating consistent and efficient UIs.
             </p>
           </div>
+        </div>
+        <br />
+
+        <h3 class="text-2xl font-bold mb-5 text-center">보안</h3>
+        <div
+          class="hr-container"
+          style="
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+          "
+        >
+          <div class="custom-hr4 custom-hr-margin"></div>
+          <div class="custom-hr5 custom-hr-margin"></div>
+          <div class="custom-hr6 custom-hr-margin"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div class="bg-white p-6 rounded shadow">
             <img src="/img/guard.png" alt="" class="w-16 h-16 mx-auto mb-4" />
             <h3 class="text-center text-2xl font-semibold mb-4">
@@ -123,6 +221,7 @@
               lead to breaches and data loss.
             </p>
           </div>
+
           <div class="bg-white p-6 rounded shadow">
             <img src="/img/Server.png" alt="" class="w-16 h-16 mx-auto mb-4" />
             <h3 class="text-center text-2xl font-semibold mb-4">
@@ -151,12 +250,71 @@
             </p>
           </div>
         </div>
+        <br />
+        <h3 class="text-2xl font-bold mb-5 text-center">언어</h3>
+        <div
+          class="hr-container"
+          style="
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+          "
+        >
+          <div class="custom-hr7 custom-hr-margin"></div>
+          <div class="custom-hr5 custom-hr-margin"></div>
+          <div class="custom-hr6 custom-hr-margin"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded shadow">
+            <img src="/img/python.jpg" alt="" class="w-16 h-16 mx-auto mb-4" />
+            <h3 class="text-center text-2xl font-semibold mb-4">Python</h3>
+            <p class="text-gray-600">
+              Python's simplicity and extensive library support make it a
+              popular choice for automation tasks such as web scraping, data
+              analysis, and testing, and it can also be used to create bots for
+              chat and communication automation. Python automation is widely
+              used in various fields, and there are many resources available for
+              developers to learn and collaborate on automation projects.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded shadow">
+            <img src="/img/Bash.png" alt="" class="w-16 h-16 mx-auto mb-4" />
+            <h3 class="text-center text-2xl font-semibold mb-4">
+              Shell Script
+            </h3>
+            <p class="text-gray-600">
+              A shell script is a text file that contains a sequence of commands
+              for a UNIX-based operating system. It is called a shell script
+              because it combines a sequence of commands, that would otherwise
+              have to be typed into the keyboard one at a time, into a single
+              script. The shell is the operating system's command-line interface
+              (CLI) and interpreter for the set of commands that are used to
+              communicate with the system.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded shadow">
+            <img src="/img/Bat.png" alt="" class="w-16 h-16 mx-auto mb-4" />
+            <h3 class="text-center text-2xl font-semibold mb-4">Bat script</h3>
+            <p class="text-gray-600">
+              The Bat script can be used in conjunction with security measures
+              to automate routine tasks, such as malware scans, backups, and
+              password management, improving overall system security. By
+              implementing measures such as access controls, firewalls, and
+              encryption, the script can help prevent unauthorized access and
+              data breaches. Regular updates and maintenance to the script and
+              security measures are crucial to ensure maximum protection against
+              evolving threats. Proper training and awareness for users are also
+              essential to minimize human error and promote a culture of
+              security.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
     <footer class="bg-black shadow">
       <div class="container mx-auto px-4 py-6">
         <p class="text-center text-white">
-          Copyright &copy; 2023, 중부대학교 정보보호학전공 원주연 학생
+          Copyright © 2023, 중부대학교 정보보호학전공 원주연 학생
         </p>
       </div>
     </footer>
